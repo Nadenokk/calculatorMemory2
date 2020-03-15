@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="484.0" prefWidth="296.0" style="-fx-background-color: rgb(25,25,112);" stylesheets="@style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.Controller">
+   <children>
+      <Button layoutX="83.0" layoutY="245.0" mnemonicParsing="false" onAction="#pressing8Btn" prefHeight="39.0" prefWidth="53.0" style="-fx-background-color: rgb(70,130,180);" text="8" textFill="#f2f2f2" />
+      <Button layoutX="22.0" layoutY="245.0" mnemonicParsing="false" onAction="#pressing7Btn" prefHeight="39.0" prefWidth="53.0" style="-fx-background-color: rgb(70,130,180);" text="7" textFill="WHITE" />
+      <Button layoutX="145.0" layoutY="245.0" mnemonicParsing="false" onAction="#pressing9Btn" prefHeight="39.0" prefWidth="53.0" style="-fx-background-color: rgb(70,130,180);" text="9" textFill="WHITE" />
+      <Button layoutX="83.0" layoutY="421.0" mnemonicParsing="false" onAction="#dot" prefHeight="39.0" prefWidth="53.0" style="-fx-background-color: rgb(70,130,180);" text="." textFill="WHITE" />
+      <Button layoutX="83.0" layoutY="304.0" mnemonicParsing="false" onAction="#pressing5Btn" prefHeight="39.0" prefWidth="53.0" style="-fx-background-color: rgb(70,130,180);" text="5" textFill="WHITE" />
+      <Button layoutX="22.0" layoutY="361.0" mnemonicParsing="false" onAction="#pressing1Btn" prefHeight="39.0" prefWidth="53.0" style="-fx-background-color: rgb(70,130,180);" text="1" textFill="WHITE" />
+      <Button layoutX="22.0" layoutY="304.0" mnemonicParsing="false" onAction="#pressing4Btn" prefHeight="39.0" prefWidth="53.0" style="-fx-background-color: rgb(70,130,180);" text="4" textFill="WHITE" />
+      <Button layoutX="145.0" layoutY="361.0" mnemonicParsing="false" onAction="#pressing3Btn" prefHeight="39.0" prefWidth="53.0" style="-fx-background-color: rgb(70,130,180);" text="3" textFill="WHITE" />
+      <Button layoutX="145.0" layoutY="304.0" mnemonicParsing="false" onAction="#pressing6Btn" prefHeight="39.0" prefWidth="53.0" style="-fx-background-color: rgb(70,130,180);" text="6" textFill="WHITE" />
+      <Button layoutX="83.0" layoutY="361.0" mnemonicParsing="false" onAction="#pressing2Btn" prefHeight="39.0" prefWidth="53.0" style="-fx-background-color: rgb(70,130,180);" text="2" textFill="WHITE" />
+      <Button layoutX="145.0" layoutY="421.0" mnemonicParsing="false" onAction="#equal" prefHeight="39.0" prefWidth="53.0" style="-fx-background-color: rgb(240,128,128);" text="=" textFill="WHITE" />
+      <Button layoutX="222.0" layoutY="361.0" mnemonicParsing="false" onAction="#minus" prefHeight="39.0" prefWidth="53.0" style="-fx-background-color: rgb(240,128,128);" text="-" textFill="WHITE" />
+      <Button layoutX="22.0" layoutY="421.0" mnemonicParsing="false" onAction="#pressing0Btn" prefHeight="39.0" prefWidth="53.0" style="-fx-background-color: rgb(70,130,180);" text="0" textFill="WHITE" />
+      <Button layoutX="222.0" layoutY="421.0" mnemonicParsing="false" onAction="#add" prefHeight="39.0" prefWidth="53.0" style="-fx-background-color: rgb(240,128,128);" text="+" textFill="WHITE" />
+      <Button layoutX="222.0" layoutY="245.0" mnemonicParsing="false" onAction="#divide" prefHeight="39.0" prefWidth="53.0" style="-fx-background-color: rgb(240,128,128);" text="/" textFill="WHITE" />
+      <Button layoutX="222.0" layoutY="304.0" mnemonicParsing="false" onAction="#times" prefHeight="39.0" prefWidth="53.0" style="-fx-background-color: rgb(240,128,128);" text="×" textFill="WHITE" />
+      <Button layoutX="83.0" layoutY="171.0" mnemonicParsing="false" onAction="#plusminus" prefHeight="51.0" prefWidth="53.0" style="-fx-background-color: rgb(176,196,222);" text="+/-" textFill="WHITE" />
+      <Button layoutX="22.0" layoutY="171.0" mnemonicParsing="false" onAction="#clear" prefHeight="51.0" prefWidth="53.0" style="-fx-background-color: rgb(176,196,222);" text="AC" textFill="WHITE" />
+      <TextField fx:id="inputField" alignment="CENTER_RIGHT" disable="true" editable="false" layoutX="20.0" layoutY="34.0" opacity="0.5" prefHeight="58.0" prefWidth="255.0" style="-fx-background-color: rgb(250,250,250); -fx-background-radius: 0;" text="0">
+         <font>
+            <Font name="Century Gothic" size="30.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="outputField" alignment="CENTER_RIGHT" disable="true" editable="false" layoutX="20.0" layoutY="94.0" opacity="0.5" prefHeight="58.0" prefWidth="255.0" style="-fx-background-color: rgb(250,250,250); -fx-background-radius: 0;" text="0">
+         <font>
+            <Font name="Century Gothic" size="30.0" />
+         </font>
+      </TextField>
+      <Label fx:id="equalLabel" alignment="CENTER" layoutX="21.0" layoutY="96.0" prefHeight="29.0" prefWidth="43.0" text="=" visible="false">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <MenuBar layoutX="210.0" layoutY="2.0" opacity="0.5" prefHeight="10.0" prefWidth="67.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="About">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Made by Olesya Tiupina" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextField fx:id="toBinary" alignment="CENTER_RIGHT" disable="true" layoutX="145.0" layoutY="171.0" opacity="0.5" prefHeight="51.0" prefWidth="130.0" style="-fx-background-color: rgb(250,250,250);" text="0">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </TextField>
+   </children>
+</Pane>
